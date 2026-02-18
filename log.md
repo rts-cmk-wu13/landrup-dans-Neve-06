@@ -9,6 +9,38 @@ Husk, at du ikke må arbejde på din opgave mellem kl. 16:00 og kl. 8:00.
 ## Dag 1
 
 Morgen - (tidspunkt)  
+
+10:13 - First commit. 
+Added next-app@latest along with creating a dev-branch
+
+10:33 - Installed Sass-embedded, which is my prefered styling method
+
+10:46 - changed the global.css to an scss file instead
+
+11:21 - added a base.scss
+
+11:21 - added a layout.scss file with subgrid method
+
+13:03 - added images from assets to public
+
+13:04 - added a hero component
+
+14:15 - added styling to the body
+
+14:16 - added a dummy header, which will turn into a component later, also outcommented a file which i didn't deem neccessary
+
+14:17 - added a layout scss file, which will help make a nice responsive layout, as well as an img scss, while there is no styling in there at the moment
+
+14:18 - made the home page have all its "pre-made" content removed. Also created a Loginform for the login page, with all its settings
+
+14:22 - made the global scss @use all the other scss files
+
+14:25 - final 2 commits. 
+
+
+
+
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 2
