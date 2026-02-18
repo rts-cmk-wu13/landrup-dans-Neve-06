@@ -39,6 +39,11 @@ Added next-app@latest along with creating a dev-branch
 
 
 
+## Summary Day 1. 
+Today was the start to the project. Setting it up with Next, installing dependencies like sass, zod, etc. 
+The big thing that was made today was the Login page, which works with a username instead of an email, 
+and the hero component, which is a simple image. The Layout is also working, with a subgrid. 
+More stuff will be added tomorrow. 
 
 
 Eftermiddag - (tidspunkt)
