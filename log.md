@@ -51,6 +51,13 @@ Eftermiddag - (tidspunkt)
 ## Dag 2
 
 Morgen - (tidspunkt)  
+
+## Summary Day 2. 
+
+Today was a difficult day. A lot of fetches didn't work, and i ran into a lot of problems with the activities list and details pages, where the data simply wouldn't show up. I only managed to get the list to work, but the details must wait for tomorrow. I did also create a profile page which you go to after the login page. I also made a lot of work on the landing page, like a component for the groups that are there. 
+Tomorrow i hope for an easier time with this api. 
+
+Also i cant be bothered to write every single commit like i did yesterday. 
 Eftermiddag - (tidspunkt)
 
 ## Dag 3
