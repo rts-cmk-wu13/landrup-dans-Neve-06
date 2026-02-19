@@ -19,10 +19,11 @@ export default async function ActivitiesPage() {
     return (
         <main>
             <h1 className="mb-4">Aktiviteter</h1>
-
+            <section className="columns">
             {activities.map(activity => (
                 <BlogCard activity={activity} key={activity.id} />
             ))}
+            </section>
         </main>
 
     )
