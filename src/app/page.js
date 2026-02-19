@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/app/components/Hero/hero"
 import Link from "next/link";
+import Groups from "@/app/components/Groups/groups";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main className="">
         <Hero/>
         <Link className="login__button"href="/login">Login</Link>
+        <Groups/>
       </main>
     </div>
   );
