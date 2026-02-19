@@ -17,15 +17,15 @@ export default function LoginForm() {
 
         <form action={formAction} noValidate>
             <div className="columns">
-                <input type="text" name="username" placeholder="Brugernavn" defaultValue={state.values.username} />
+                <input className="login__input" type="text" name="username" placeholder="Brugernavn" defaultValue={state.values.username} />
                 {state.errors?.email && <p>{state.errors.email}</p>}
             </div>
             <div className="columns">
-                <input type="password" name="password" placeholder="Adgangskode" defaultValue={state.values.password} />
+                <input className="login__input" type="password" name="password" placeholder="Adgangskode" defaultValue={state.values.password} />
                 {state.errors?.password && <p>{state.errors.password}</p>}
             </div>
             {state.errors?.form && <p>{state.errors.form}</p>}
-            <button type="submit" disabled={isPending}>{isPending ? "Logger ind..." : "Log ind"}</button>
+            <button className="login__button" type="submit" disabled={isPending}>{isPending ? "Logger ind..." : "Log ind"}</button>
         </form>
     )
 }
