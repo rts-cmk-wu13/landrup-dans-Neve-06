@@ -10,7 +10,7 @@ export default function Hero() {
         src="/heroimg.jpg" 
         width={330}
         height={300}
-        // fill="layout"
+        // fill="background-color"
         alt="hero">
         </Image>
         </div>
