@@ -2,19 +2,17 @@ import Link from "next/link"
 
 export default function BlogCard({ activity }) {
 
-    // const formattedDate = Intl.DateTimeFormat("da-DK", {dateStyle: "long"}).format(new Date(activity.createdAt))
     return (
         <>
         <Link href={`/activities/${activity.id}`} aria-labelledby={"activities" + activity.id}>
             <article>
-                {/* <p>{formattedDate}</p> */}
                 <figure className="activity__image-figure">
                 <img className="activity__image" src={activity.asset.url} alt={activity.name}/>
-                </figure>
                 <div className="activity__image-description">
                 <h2 id={"activities" + activity.id}>{activity.name}</h2>
                 <p>{activity.minAge} år</p>
                 </div>
+                </figure>
             </article>
         </Link>
         </>
