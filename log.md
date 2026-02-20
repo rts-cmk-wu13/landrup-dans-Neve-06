@@ -63,7 +63,23 @@ Eftermiddag - (tidspunkt)
 ## Dag 3
 
 Morgen - (tidspunkt)  
+
+10:17 - First commit of the day, i installed embla carousel, for the landing page
 Eftermiddag - (tidspunkt)
+
+10:55 - I tried to install embla carousel, to see if i can make a good carousel. 
+
+update: Its uh. Its not going too well
+
+update: it went better i guess. yay. 
+
+13:55 - Most of the successful stuff for today has been the styling. I also just got the details to work, and the proxy works too as well as no access.  
+
+13:58 - A lot of different files, components and pages were made today but some work and some dont. 
+
+## Summary Day 3. 
+
+So basically all the stuff that i got to work today, was the stuff that tells me when something doesn't work. I got details and list to work fully, as well as getting a Notfound and no-access page to work. A carousel is also something i am planning to work on. Hopefully the next day will be better with more progress
 
 ## Dag 4
 
