@@ -8,5 +8,5 @@ export function proxy(request) {
     }}
 
 export const config = {
-    matcher: ['/activities/:path*'],
+    matcher: ['/activities/:path*', "/profile/:path*"],
 };
