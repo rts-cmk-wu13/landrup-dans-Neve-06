@@ -7,12 +7,14 @@ export default function BlogCard({ activity }) {
         <>
         <Link href={`/activities/${activity.id}`} aria-labelledby={"activities" + activity.id}>
             <article>
-                <h2 id={"activities" + activity.id}>{activity.name}</h2>
                 {/* <p>{formattedDate}</p> */}
                 <figure className="activity__image-figure">
                 <img className="activity__image" src={activity.asset.url} alt={activity.name}/>
                 </figure>
+                <div className="activity__image-description">
+                <h2 id={"activities" + activity.id}>{activity.name}</h2>
                 <p>{activity.minAge} år</p>
+                </div>
             </article>
         </Link>
         </>

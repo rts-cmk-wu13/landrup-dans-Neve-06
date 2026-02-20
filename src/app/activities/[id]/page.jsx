@@ -8,15 +8,6 @@ export default async function ActivityDetailPage({ params }) {
 
     const { id } = await params;
     const activity = await getActivityById(id);
-
-    //     if(activity.success === false){
-    //     return (
-    //         <main>
-    //             <h1>Oops something went wrong</h1>
-    //             <p>{activity.message}</p>
-    //         </main>
-    //     )
-    // }
     console.log(activity);
  
     if (!activity) return notFound();
@@ -25,11 +16,13 @@ export default async function ActivityDetailPage({ params }) {
         <main>
             <Link href="/activities">Return to activities</Link>
             <article>
-
+                <img src={activity.asset.url} alt={activity.name} />
                 <h1>
                     {activity.name}
                 </h1>
+                <p>{activity.minAge}+ år</p>
                 <div dangerouslySetInnerHTML={{ __html: activity.description }}></div>
+
                 {/* <CommentSection comments={activity.data.comments} /> */}
             </article>
         </main>
