@@ -9,10 +9,10 @@ export default function BlogCard({ activity }) {
             <article>
                 <h2 id={"activities" + activity.id}>{activity.name}</h2>
                 {/* <p>{formattedDate}</p> */}
-                <figure className="logo">
-                <img src={activity.asset.url} alt={activity.name}/>
+                <figure className="activity__image-figure">
+                <img className="activity__image" src={activity.asset.url} alt={activity.name}/>
                 </figure>
-                <p>{activity.maxParticipants}</p>
+                <p>{activity.minAge} år</p>
             </article>
         </Link>
         </>
