@@ -18,7 +18,7 @@ export default function LoginForm() {
         <form action={formAction} noValidate>
             <div className="columns">
                 <input className="login__input" type="text" name="username" placeholder="Brugernavn" defaultValue={state.values.username} />
-                {state.errors?.email && <p>{state.errors.email}</p>}
+                {state.errors?.text && <p>{state.errors.text}</p>}
             </div>
             <div className="columns">
                 <input className="login__input" type="password" name="password" placeholder="Adgangskode" defaultValue={state.values.password} />
