@@ -84,6 +84,19 @@ So basically all the stuff that i got to work today, was the stuff that tells me
 ## Dag 4
 
 Morgen - (tidspunkt)  
+
+12:11 - I got the carousel to work. It was a pain, but it works. I had to import the component AND the fetch on the home page. It also doesn't clash with server/client.
+
+- Installed react icons. trying to get it for the carousel. 
+- I styled the carousel. 
+- Got the footer component to work at 14:16
+
+Finally. the footer is fully functional
+
+## Summary Day 4
+
+Today was interesting. i fixed my carousel, i got the footer working and i did some more styling. i also learned that you have to install react icons in next, where before you could just import them. 
+otherwise nothing else was made today. Am i proud? kinda, but i also feel like i could have done more
 Eftermiddag - (tidspunkt)
 
 ## Dag 5
