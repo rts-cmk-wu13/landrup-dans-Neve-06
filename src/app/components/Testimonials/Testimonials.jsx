@@ -1,24 +1,36 @@
 "use client"
+import React from "react"
+import useEmblaCarousel from "embla-carousel-react"
 
-import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
+export default function Testimonials({ testimonials = [] }) {
+    // Initialize Embla carousel and keep it looping infinitely.
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
-export default function Testimonals() {
-  const [emblaRef, emblaApi] = useEmblaCarousel( { loop: true } )
+    // Navigation helpers used by the previous/next buttons.
+    const scrollPrev = () => emblaApi?.scrollPrev()
+    const scrollNext = () => emblaApi?.scrollNext()
 
+    return (
+        <div className="embla">
+            {/* Embla controls this viewport element via emblaRef. */}
+            <div className="embla__viewport" ref={emblaRef}>
+                <div className="embla__container">
+                    {/* Render each testimonial as one slide in the carousel. */}
+                    {testimonials.map((testimonial) => (
+                        <article className="embla__slide" key={testimonial.id}>
+                            <p>{testimonial.name}</p>
+                            <p>{testimonial.content}</p>
+                        </article>
+                    ))}
+                </div>
+            </div>
 
-  return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          <div className="embla__slide">Slide 1</div>
-          <div className="embla__slide">Slide 2</div>
-          <div className="embla__slide">Slide 3</div>
+            <button className="embla__prev" onClick={scrollPrev}>
+                Scroll to prev
+            </button>
+            <button className="embla__next" onClick={scrollNext}>
+                Scroll to next
+            </button>
         </div>
-      </div>
-
-      <button className="embla__prev">Scroll to prev</button>
-      <button className="embla__next">Scroll to next</button>
-    </div>
-  )
+    )
 }
