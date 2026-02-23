@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Profilepage() {
+export default async function Profilepage() {
 
     return (
         <>
@@ -10,7 +10,7 @@ export default function Profilepage() {
                         <figure className="logo no-columns">
                         <Image src="/profile.svg" width={100} height={100} alt="profile__image"></Image>
                         </figure>
-                        <h1 className="no-columns logo">Velkommen, [Brugernavn]!</h1>
+                        <h1 className="no-columns logo">Velkommen</h1>
                     </section>
                 </main>
         </>
