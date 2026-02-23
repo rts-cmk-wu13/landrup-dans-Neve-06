@@ -1,10 +1,14 @@
 "use client"
 import React from "react"
 import useEmblaCarousel from "embla-carousel-react"
+import Autoplay from "embla-carousel-autoplay"
 
 export default function Testimonials({ testimonials = [] }) {
     // Initialize Embla carousel and keep it looping infinitely.
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+        Autoplay({ delay: 6000 })
+    ])
+
 
     // Navigation helpers used by the previous/next buttons.
     const scrollPrev = () => emblaApi?.scrollPrev()
