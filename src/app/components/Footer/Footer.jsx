@@ -2,6 +2,11 @@
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
+import { CiCircleList } from "react-icons/ci";
+import { FaUserAlt } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
+
+
 
 export default function Footer() {
     const pathname = usePathname()
@@ -34,13 +39,11 @@ export function FixedFooter() {
     return (
 
         <>
-            <footer className="fixed__footer">
-                <ul>
-                    <li><Link href="/"></Link></li>
-                    <li><Link href="/activities"></Link></li>
-                    <li><Link href="/profile"></Link></li>
+                <ul className="fixed__footer columns">
+                    <li><Link href="/"><IoHome style={{color: "black"}}/></Link></li>
+                    <li><Link href="/activities"><CiCircleList style={{color: "black"}}/></Link></li>
+                    <li><Link href="/profile"><FaUserAlt style={{color: "black"}}/></Link></li>
                 </ul>
-            </footer>
         </>
     )
 }
