@@ -1,24 +1,23 @@
-
-
-img{
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.activity__image-figure{
+.activity__image-figure {
     height: 20rem;
 }
 
-.activity__image{
+.activity__image {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
-.activity__image-description{
+.activity__image-description {
     position: relative;
     bottom: 50;
     left: 0;
-    background-color: #003147;
-    opacity: 0.50;
+    background: rgba(0, 49, 71, 0.7);
+    border-top-right-radius: 1rem;
 }
