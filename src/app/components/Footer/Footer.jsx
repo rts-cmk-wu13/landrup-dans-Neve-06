@@ -12,6 +12,7 @@ export default function Footer() {
     const pathname = usePathname()
 
     if (pathname === "/") return <HomeFooter />
+    if (pathname === "/login") return null
 
     return (
         <>
