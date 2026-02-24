@@ -16,7 +16,9 @@ export default async function ActivityDetailPage({ params }) {
         <main>
             <Link href="/activities">Return to activities</Link>
             <article>
+                <figure className="activity__image-figure">
                 <img src={activity.asset.url} alt={activity.name} />
+                </figure>
                 <h1>
                     {activity.name}
                 </h1>
