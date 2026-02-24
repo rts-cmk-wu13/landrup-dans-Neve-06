@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { cookies } from "next/headers";
 import { getUsersById, getAllActivities } from "../lib/dal";
+import LogoutButton from "../components/LogoutForm/LogoutForm";
 
 export default async function Profilepage() {
     const cookieStore = await cookies()
@@ -21,6 +22,7 @@ export default async function Profilepage() {
                     <h1 className="no-columns logo">Velkommen</h1>
                     <p className="no-columns logo">{user.firstname} {user.lastname}</p>
                     <p className="no-columns logo">{user.role}</p>
+                    <LogoutButton/>
                 </section>
             </main>
         </>
