@@ -102,4 +102,15 @@ Eftermiddag - (tidspunkt)
 ## Dag 5
 
 Morgen - (tidspunkt)  
+
+11:21 - I got the login to fully work. I thought it worked before, but it didn't. this was due to the fact that the value inside the token wasn't showing up. I got the token to go through, but it didn't have any value. This was fixed, by looking in the terminal, where it said "token" and "userId" and not accessToken and name. 
+Its so stupid. 
+
+14:47 - got profile to work partially. It shows the data now, but only on the first instructors profile. any other attempt with another login fails. 
+
+15:14 - Login fully works now, along with profile. the fetch had issues but it was fixed. I also added the variables created in the dal inside the userById function, so now it works with no issues. Also added a logout button, which was copypasted from the previous project and it works flawlessly. It also sends you back to the landing page when logging out.
+
+15:39 - think this may be the last thing i do for this project. I made some styling improvements, a bit mroe functionality with the footer and the notfound/no-access pages. While i believe some things on this project were challenging and frustrating, there was a lot i still didn't know how to fix. But i made what i was able to do, and i can only be proud of that. 
+
+15:41, last commit. 
 Eftermiddag - (tidspunkt)
