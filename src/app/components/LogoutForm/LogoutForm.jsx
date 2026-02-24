@@ -12,7 +12,7 @@ export default async function LogoutButton() {
         <form className="no-columns logo" action={logoutAction}>
             {
                 isUserLoggedIn
-                ? <button  type="submit">Logout</button>
+                ? <button className="login__button" type="submit">Logout</button>
                 : <Link href="/login">Login</Link>
             }
         </form>
